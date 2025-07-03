@@ -9,10 +9,7 @@ This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor te
   - [🧠 Software Architecture Diagram](#Software-Architecture-Diagram)
 - [🚀 Installation & Setup Guide](#Installation-and-Setup-Guide)
 
-| Feature   | Description         |
-|-----------|---------------------|
-| Fast      | Loads quickly       |
-| Reliable  | Consistent results  |
+---
 
 ## Documentation
 Full setup documentation on the ESP32, Flask Server & StreamLit setup is available here.
@@ -132,6 +129,11 @@ your-project/
 
 ## 📊 Live Dashboard
 The Streamlit web application provides real-time visualisations of the temperature & humidity data collected by the ESP32.
+
+| Feature   | Description         |
+|-----------|---------------------|
+| Fast      | Loads quickly       |
+| Reliable  | Consistent results  |
 
 ## 📄 License
 
