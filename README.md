@@ -118,10 +118,17 @@ your-project/
 │   ├── app.py               ← Flask application    
 │   └── data.csv             ← Stored sensor readings  
 │
-├── streamlit_app/           ← Streamlit application 
-│   ├── app.py               ← Streamlit dashboard 
-│   └── data/                
-│       └── data.csv         ← Symlink or copy of `../flask_server/data.csv`  
+├── streamlit_app/                 ← Streamlit application
+│   ├── main_dashboard.py          ← Main dashboard (entrypoint) implementation (menus, scripts)
+│   ├── home_page.py               ← Home page layout  
+│   ├── analytics_page.py          ← Analytics overview page
+│   ├── view_footage_list.py       ← Video footage list viewer
+│   ├── uptime_live.py             ← Live uptime monitor  
+│   ├── utils.py                   ← Helper functions and utilities  
+│   ├── data/                      
+│   │   └── data.csv               ← Symlink or copy of `../flask_server/data.csv`  
+│   ├── images/                    ← Images used in the Streamlit app  
+│   └── styles/                    ← CSS styles for the Streamlit app
 │
 ├── README.md                ← Project documentation  
 └── .gitignore    
