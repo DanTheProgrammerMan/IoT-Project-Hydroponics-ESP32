@@ -37,7 +37,7 @@ Full setup documentation on the ESP32, Flask Server & StreamLit setup is availab
 - Place a 10kΩ resistor between the Data and VCC lines of the DHT11 sensor.
 
 Insert wiring diagram image here
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](https://github.com/DanTheProgrammerMan/IoT-Project-Hydroponics-ESP32/blob/main/circuit.svg)
 
 
 ## Installation & Setup Guide
