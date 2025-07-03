@@ -133,6 +133,8 @@ your-project/
 ├── README.md                ← Project documentation  
 └── .gitignore    
 ```
+> ![NOTE]
+> `main_dashboard.py` refers to `IoT_Project-1_Dashboard_v1_FINAL.py` | `analytics_page.py` refers to `analytics_overview.py`
 
 ---
 
