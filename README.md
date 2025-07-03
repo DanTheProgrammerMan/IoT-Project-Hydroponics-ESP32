@@ -8,17 +8,12 @@ This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor te
   - [🔌 Wiring Diagram](#Wiring-Diagram)
   - [🧠 Software Architecture Diagram](#Software-Architecture-Diagram)
 - [🚀 Installation & Setup Guide](#Installation-&-Setup-Guide)
-- [🔐Security Considerations](#Security-Considerations)
+- [🔐 Security Considerations](#Security-Considerations)
 
 | Feature   | Description         |
 |-----------|---------------------|
 | Fast      | Loads quickly       |
 | Reliable  | Consistent results  |
-
-```python
-def hello_world():
-    print("Hello, world!")
-```
 
 ## Documentation
 Full setup documentation on the ESP32, Flask Server & StreamLit setup is available here.
@@ -42,7 +37,7 @@ Full setup documentation on the ESP32, Flask Server & StreamLit setup is availab
 - Place a 10kΩ resistor between the Data and VCC lines of the DHT11 sensor.
 
 Insert wiring diagram image here
-![Circuit Diagram](images/circuit_diagram.png)
+![Circuit Diagram](circuit.png)
 
 
 ## Installation & Setup Guide
