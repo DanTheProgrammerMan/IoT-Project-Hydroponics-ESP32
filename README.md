@@ -7,7 +7,7 @@ This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor te
   - [🧰 Hardware Components](#Hardware-Components)
   - [🔌 Wiring Diagram](#Wiring-Diagram)
   - [🧠 Software Architecture Diagram](#Software-Architecture-Diagram)
-- [🚀 Installation & Setup Guide](#Installation-&-Setup-Guide)
+- [🚀 Installation & Setup Guide](#Installation-and-Setup-Guide)
 
 | Feature   | Description         |
 |-----------|---------------------|
@@ -39,7 +39,7 @@ Insert wiring diagram image here
 ![Circuit Diagram](https://github.com/DanTheProgrammerMan/IoT-Project-Hydroponics-ESP32/blob/main/circuit.svg)
 
 
-## Installation & Setup Guide
+## Installation and Setup Guide
 ### Prerequisites
 - Python 3.7 or higher
 - Arduino IDE configured for ESP32 development
