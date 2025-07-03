@@ -65,8 +65,9 @@ _File: circuit.svg_
   - `py -m pip install pandas`
 3. Run the Flask server:
   - `python flask_server.py`
-  - 
-- Ensure your Flask server is running and accessible at the specified IP address.
+
+> [!NOTE]
+> Ensure your Flask server is running and accessible at the specified IP address.
 
 ### 3. Streamlit Application Setup:
 1. Navigate to the streamlit_app directory.
