@@ -4,25 +4,16 @@ This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor te
 
 ## Contents
 - [Documentation](#Documentation)
-- [Hardware Components](#🧰-Hardware-Components)
-- [Wiring Diagram](#🔌-Wiring-Diagram)
-- [Software Architecture Diagram](#🧠-Software-Architecture-Diagram)
-- [Installation & Setup Guide](#🚀-Installation-&-Setup-Guide)
-
-<details>
-  <summary>Click to expand</summary>
-
-  Hidden content goes here.
-
-</details>
+  - [🧰 Hardware Components](#🧰-Hardware-Components)
+  - [🔌 Wiring Diagram](#🔌-Wiring-Diagram)
+  - [🧠 Software Architecture Diagram](#🧠-Software-Architecture-Diagram)
+- [🚀 Installation & Setup Guide](#🚀-Installation-&-Setup-Guide)
+- [🔐Security Considerations](#Security-Considerations)
 
 | Feature   | Description         |
 |-----------|---------------------|
 | Fast      | Loads quickly       |
 | Reliable  | Consistent results  |
-
-- [x] Completed task
-- [ ] Incomplete task
 
 ```python
 def hello_world():
@@ -34,19 +25,15 @@ Full setup documentation on the ESP32, Flask Server & StreamLit setup is availab
 - ESP32
 - Flask Server
 - StreamLit
-[![Build Status]()]()
-[![Verbose Build Status]()]()
-[![External Libraries Test]()]()
-[![Runtime Tests](https://github.com/espressif/arduino-esp32/blob/gh-pages/runtime-tests-results/badge.svg)](https://github.com/espressif/arduino-esp32/blob/gh-pages/runtime-tests-results/RUNTIME_TESTS_REPORT.md)
 
-## 🧰 Hardware Components
+##  Hardware Components
 
 - ESP32 Development Board
 - DHT11 Temperature and Humidity Sensor
 - 10kΩ Resistor
 - Breadboard and Jumper Wires
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 ### Connect the components as follows:
 
 - DHT11 VCC → 3.3V on ESP32
@@ -58,7 +45,7 @@ Insert wiring diagram image here
 ![Circuit Diagram](images/circuit_diagram.png)
 
 
-## 🚀 Installation & Setup Guide
+## Installation & Setup Guide
 ### Prerequisites
 - Python 3.7 or higher
 - Arduino IDE configured for ESP32 development
@@ -69,44 +56,43 @@ Insert wiring diagram image here
 
 ### Setup Guide
 ### 1. ESP32 Setup:
-- Connect the DHT11 sensor to the ESP32 as per the wiring diagram.
-- Open the Arduino IDE and install the necessary libraries:
+1. Connect the DHT11 sensor to the ESP32 as per the wiring diagram.
+2. Open the Arduino IDE and install the necessary libraries:
   - `DHT sensor library`
   - `Adafruit Unified Sensor`
-- Upload the provided Arduino code to the ESP32.
+3. Upload the provided Arduino code to the ESP32.
 
 ### 2. Flask Server Setup:
-- Navigate to the flask_server directory.
-- Install dependencies:
+1. Navigate to the flask_server directory.
+2. Install dependencies:
   - `py -m pip install flask pandas`
   - `py -m pip install pandas`
-- Run the Flask server:
+3. Run the Flask server:
   - `python flask_server.py`
+  - 
+- Ensure your Flask server is running and accessible at the specified IP address.
 
 ### 3. Streamlit Application Setup:
-- Navigate to the streamlit_app directory.
-- Install dependencies:
+1. Navigate to the streamlit_app directory.
+2. Install dependencies:
   - `py -m pip install streamlit pandas`
-- Run the Streamlit app:
+3. Run the Streamlit app:
   - `streamlit run app.py`
 
-- Ensure that the Flask server is running before starting the Streamlit application to allow real-time data visualisation.
-  - Or you can refresh the StreamLit app
+> [!NOTE]
+> Ensure that the Flask server is running before starting the ESP32, otherwise you will receive data from the ESP32 where the uptime has all already started.
+> **Debug/Testing:** Monitor the serial output for sensor readings and HTTP response codes.
+
+---
 
 ## 📊 Live Dashboard
 The Streamlit web application provides real-time visualizations of the temperature and humidity data collected by the ESP32.
 
 Insert screenshot of the Streamlit dashboard here
 
-## 🧰 Setup Instructions
+---
 
-1. Connect the DHT11 sensor to the ESP32 as shown in the circuit diagram.
-2. Upload the provided Arduino code to the ESP32.
-3. Ensure your Flask server is running and accessible at the specified IP address.
-4. Monitor the serial output for sensor readings and HTTP response codes.
-
-
-## 🧠 Software Architecture Diagram
+## Software Architecture Diagram
 The system architecture consists of three main components:
 
 #### ESP32 Microcontroller:
@@ -134,7 +120,7 @@ You can create a flowchart or diagram illustrating this architecture using tools
 
 ---
 
-## 🔐 Security Considerations
+## Security Considerations
 
 
 ## 📄 License
