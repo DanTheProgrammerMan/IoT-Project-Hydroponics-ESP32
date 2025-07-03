@@ -1,12 +1,12 @@
 # IoT ESP32 Temperature & Humidity Monitor Using Flask, StreamLit & Arduino IDE
 
-This project utilizes an ESP32 microcontroller with a DHT11 sensor to monitor temperature and humidity levels. The data is sent to a Flask server for logging and analysis.
+This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor temperature and humidity levels. The data is sent to a Flask server for logging, then a StreamLit web app does analysis and visualisation.
 
 ## Contents
-- Documentation
-- Hardware Components
-- Wiring Diagram
-- Installation & Setup Guide
+- [Documentation](#Documentation)
+- [Hardware Components](#Hardware-Components)
+- [Wiring Diagram](#Wiring-Diagram)
+- [Installation & Setup Guide](#Installation-&-Setup-Guide)
 
 <details>
   <summary>Click to expand</summary>
