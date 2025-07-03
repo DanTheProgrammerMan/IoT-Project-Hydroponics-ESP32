@@ -108,27 +108,25 @@ Insert screenshot of the Streamlit dashboard here
 ## 🧠 Software Architecture Diagram
 The system architecture consists of three main components:
 
-ESP32 Microcontroller:
+#### ESP32 Microcontroller:
 
-Reads data from the DHT11 sensor.
+- Reads data from the DHT11 sensor.
 
-Connects to Wi-Fi and sends HTTP POST requests containing the sensor data to the Flask server.
+- Connects to Wi-Fi and sends HTTP POST requests containing the sensor data to the Flask server.
 
-Flask Server:
+#### Flask Server:
 
-Receives data from the ESP32.
+- Receives data from the ESP32.
 
-Appends the received data to a CSV file for storage.
+- Appends the received data to a CSV file for storage.
 
-Streamlit Web Application:
+#### Streamlit Web Application:
 
-Reads the CSV file periodically.
+- Reads the CSV file periodically.
 
-Displays real-time graphs and statistics based on the sensor data.
-gist.github.com
-+1
-forum.arduino.cc
-+1
+- Displays real-time graphs and statistics based on the sensor data.
+
+!image([https://github.com/DanTheProgrammerMan/IoT-Project-Hydroponics-ESP32/blob/main/Software-Architecture-Diagram_IoT.png])
 
 ## Visual Representation:
 You can create a flowchart or diagram illustrating this architecture using tools like:
