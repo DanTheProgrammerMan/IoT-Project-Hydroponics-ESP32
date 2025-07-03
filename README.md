@@ -8,7 +8,6 @@ This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor te
   - [🔌 Wiring Diagram](#Wiring-Diagram)
   - [🧠 Software Architecture Diagram](#Software-Architecture-Diagram)
 - [🚀 Installation & Setup Guide](#Installation-&-Setup-Guide)
-- [🔐 Security Considerations](#Security-Considerations)
 
 | Feature   | Description         |
 |-----------|---------------------|
@@ -81,7 +80,7 @@ Insert wiring diagram image here
 ---
 
 ## Software Architecture Diagram
-The system architecture consists of three main components:
+### The system architecture consists of three main components:
 
 #### ESP32 Microcontroller:
 
