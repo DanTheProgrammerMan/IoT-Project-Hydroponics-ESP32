@@ -80,13 +80,6 @@ Insert wiring diagram image here
 
 ---
 
-## 📊 Live Dashboard
-The Streamlit web application provides real-time visualizations of the temperature and humidity data collected by the ESP32.
-
-Insert screenshot of the Streamlit dashboard here
-
----
-
 ## Software Architecture Diagram
 The system architecture consists of three main components:
 
@@ -109,31 +102,14 @@ The system architecture consists of three main components:
 - Displays real-time graphs and statistics based on the sensor data.
 
 ## Visual Representation:
-You can create a flowchart or diagram illustrating this architecture using tools like:
 
-!image([https://github.com/DanTheProgrammerMan/IoT-Project-Hydroponics-ESP32/blob/main/Software-Architecture-Diagram_IoT.png])
+![Circuit Diagram](https://github.com/DanTheProgrammerMan/IoT-Project-Hydroponics-ESP32/blob/main/Software-Architecture-Diagram_IoT.png)
 
 ---
 
-## Security Considerations
-
+## 📊 Live Dashboard
+The Streamlit web application provides real-time visualisations of the temperature & humidity data collected by the ESP32.
 
 ## 📄 License
 
 This project is licensed under the MIT License.
-
----
-
-[![Runtime Tests](https://github.com/espressif/arduino-esp32/blob/gh-pages/runtime-tests-results/badge.svg)](https://github.com/espressif/arduino-esp32/blob/gh-pages/runtime-tests-results/RUNTIME_TESTS_REPORT.md)
-
-#### Latest Stable Release
-
-[![Release Version](https://img.shields.io/github/release/espressif/arduino-esp32.svg)](https://github.com/espressif/arduino-esp32/releases/latest/)
-[![Release Date](https://img.shields.io/github/release-date/espressif/arduino-esp32.svg)](https://github.com/espressif/arduino-esp32/releases/latest/)
-[![Downloads](https://img.shields.io/github/downloads/espressif/arduino-esp32/latest/total.svg)](https://github.com/espressif/arduino-esp32/releases/latest/)
-
-
-> [!NOTE]
-> ESP32-C2 is also supported by Arduino-ESP32 but requires using Arduino as an ESP-IDF component or rebuilding the static libraries.
-> For more information, see the [Arduino as an ESP-IDF component documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/esp-idf_component.html) or the
-> [Lib Builder documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/lib_builder.html), respectively.
