@@ -6,8 +6,8 @@ This project utilises an ESP32 microcontroller with a DHT11 sensor to monitor te
 - [Documentation](#Documentation)
   - [🧰 Hardware Components](#Hardware-Components)
   - [🔌 Wiring Diagram](#Wiring-Diagram)
-  - [🧠 Software Architecture Diagram](#Software-Architecture-Diagram)
 - [🚀 Installation & Setup Guide](#Installation-and-Setup-Guide)
+- [🧠 Software Architecture Diagram](#Software-Architecture-Diagram)
 
 ---
 
