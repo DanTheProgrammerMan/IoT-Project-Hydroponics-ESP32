@@ -47,14 +47,15 @@ _File: circuit.svg_
   - Flask
   - Streamlit
   - Pandas
-- Install: _py -m pip install flask_
+- Install: `py -m pip install flask`
 
 ### Setup Guide
 ### 1. ESP32 Setup:
 1. Connect the DHT11 sensor to the ESP32 as per the wiring diagram.
 2. Open the Arduino IDE and install the necessary libraries:
   - `DHT sensor library`
-  - `Adafruit Unified Sensor`
+  - `esp32 by Espressif Systems`
+  - `Adafruit Sensor`
 3. Upload the provided Arduino code to the ESP32.
 
 ### 2. Flask Server Setup:
