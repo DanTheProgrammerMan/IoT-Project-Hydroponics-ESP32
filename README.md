@@ -118,8 +118,8 @@ your-project/
 │   ├── app.py               ← Flask application    
 │   └── data.csv             ← Stored sensor readings  
 │
-├── streamlit_app/           ← Streamlit dashboard  
-│   ├── app.py               ← Streamlit application   
+├── streamlit_app/           ← Streamlit application 
+│   ├── app.py               ← Streamlit dashboard 
 │   └── data/                
 │       └── data.csv         ← Symlink or copy of `../flask_server/data.csv`  
 │
