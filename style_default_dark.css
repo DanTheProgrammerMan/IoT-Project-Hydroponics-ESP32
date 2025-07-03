@@ -1,0 +1,389 @@
+/* ─── 1) Color & fix the Streamlit header bar ─────────────────────────────── */
+[data-testid="stHeader"] {
+    background-color: #123456 !important;   /* your new header color */    
+    position: fixed !important;             /* pin to top of viewport */  
+    top: 0 !important;                      /* no vertical offset */      
+    width: 100% !important;                 /* span full width */ 
+    height: 70px !important;                 /* span full width */         
+    z-index: 999 !important;                /* sit above all content */   
+
+    /* only top and bottom borders */
+    /* border-top: 2px solid white !important; */
+    border-bottom: 3px solid white !important;
+    border-left: none !important;           /* border-left: 3px solid white !important; */
+    border-right: none !important;
+
+    /* different corner radii */
+    /* border-top-left-radius: 8px !important;
+    border-top-right-radius: 16px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 12px !important; */
+}
+
+  /* ─── 2) Kill any default top padding on your main area ───────────────────── */
+.block-container {
+    padding-top: 0 !important;              /* remove default Streamlit padding */  
+    margin-top: 0 !important;               /* remove any extra margin */           
+}
+  /* ─── 3) If you still need a gap for a fixed header, dial it in exactly ──── */
+[data-testid="stHeader"] ~ div[data-testid="stAppViewContainer"] 
+    .block-container {
+      padding-top: 40px !important;         /* adjust rem to match header height */   
+}
+
+section[data-testid="stSidebar"] {
+    width: 320px !important;
+}
+
+
+/* Home: collapsed (secondary) */
+.st-key-btn_home .stButton>button[kind="secondary"] {
+    background-color: #28a74550 !important;
+    color: white !important;
+}
+
+/* Home button: green background, larger font */
+.st-key-btn_home .stButton>button[kind="primary"] {
+    background-color: #28a745 !important;  /* green */
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 6px 28px !important;
+    border: 3px solid #28a745 !important;
+}
+
+/* Optional: hover effect  - button:hover */
+.st-key-btn_home .stButton>button[kind="primary"]:hover {
+    border-radius: 12px !important;
+    border: 3px solid #28a745 !important;
+}
+.st-key-btn_home .stButton>button[kind="secondary"]:hover {
+    filter: brightness(1.5);
+    transition: all 0.2s ease;
+    border-radius: 12px !important;
+    border: 3px solid rgb(0, 255, 242) !important;
+}
+
+
+/* Analytics: collapsed */
+.st-key-btn_analytics .stButton>button[kind="secondary"] {
+    background-color: #7a3c09 !important;
+    color: white !important;
+}
+
+/* Analytics: expanded */
+.st-key-btn_analytics .stButton>button[kind="primary"] {
+    background-color: #fd7e14 !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 6px 24px !important;
+    border: 3px solid #fd7e14 !important;  /* blue */
+}
+
+/* Optional: hover effect  - button:hover */
+.st-key-btn_analytics .stButton>button[kind="primary"]:hover {
+    border-radius: 12px !important;
+    border: 3px solid #fd7e14 !important;
+}
+.st-key-btn_analytics .stButton>button[kind="secondary"]:hover {
+    filter: brightness(1.5);
+    transition: all 0.2s ease;
+    border-radius: 12px !important;
+    border: 3px solid rgb(0, 255, 242) !important;
+}
+
+
+/* Repeat for Live Footage */
+.st-key-btn_live .stButton>button[kind="secondary"] {
+    background-color: #8a2be250 !important;
+    color: white !important;
+}
+
+.st-key-btn_live .stButton>button[kind="primary"] {
+    background-color: #8a2be2 !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 6px 24px !important;
+    border: 3px solid #8a2be2 !important;
+}
+
+/* Optional: hover effect  - button:hover */
+.st-key-btn_live .stButton>button[kind="primary"]:hover {
+    border-radius: 12px !important;
+    border: 3px solid #8a2be2 !important;
+}
+.st-key-btn_live .stButton>button[kind="secondary"]:hover {
+    filter: brightness(1.5);
+    transition: all 0.2s ease;
+    border-radius: 12px !important;
+    border: 3px solid rgb(0, 255, 242) !important;
+}
+
+
+/* Repeat for System Uptime */
+.st-key-btn_uptime .stButton>button[kind="secondary"] {
+    background-color: #007bff50 !important;
+    color: white !important;
+}
+
+.st-key-btn_uptime .stButton>button[kind="primary"] {
+    background-color: #007bff !important;
+    color: white !important;
+    font-size: 18px !important;
+    border-radius: 12px !important;
+    padding: 6px 24px !important;
+    border: 3px solid #007bff !important;
+}
+
+/* Optional: hover effect  - button:hover */
+.st-key-btn_uptime .stButton>button[kind="primary"]:hover {
+    border-radius: 12px !important;
+    border: 3px solid #007bff !important;
+}
+.st-key-btn_uptime .stButton>button[kind="secondary"]:hover {
+    filter: brightness(1.5);
+    transition: all 0.2s ease;
+    border-radius: 12px !important;
+    border: 3px solid rgb(0, 255, 242) !important;
+}
+
+
+/* Settings button: purple text */
+.st-key-btn_settings .stButton>button[kind="primary"] {
+    background-color: grey !important;  /* purple */
+    color: white !important;
+    border: 1px solid grey !important;
+}
+
+/* Settings button: purple text */
+.st-key-btn_settings .stButton>button[kind="secondary"] {
+    background-color: grey !important;  /* purple */
+    color: white !important;
+    border: 1px solid grey !important;
+}
+
+
+/* Features: collapsed (secondary) */
+.st-key-btn_features .stButton>button[kind="primary"] {
+    background-color: rgb(150, 149, 149) !important;
+    color: white !important;
+    border: 1px solid grey !important;
+}
+
+/* Features button */
+.st-key-btn_features .stButton>button[kind="secondary"] {
+    background-color: rgb(91, 91, 91) !important;  /* purple */
+    color: white !important;
+    border: 1px solid grey !important;
+}
+
+
+/* Optional: hover effect  - button:hover */
+.st-key-btn_settings .stButton>button:hover {
+    filter: brightness(1.3);
+    transition: all 0.2s ease;
+    border-radius: 12px !important;
+    border: 2px solid #ffffff !important;
+}
+
+
+/* Menu Open button */
+.st-key-btn_open .stButton>button {
+color: #3af364 !important;
+}
+
+.st-key-btn_open .stButton>button:hover {
+    border-radius: 12px !important;
+    border: 1px solid #ffffff !important;  /* blue */
+}
+
+/* Menu Close button */
+.st-key-btn_close .stButton>button {
+color: #ff6b61 !important;
+}
+
+.st-key-btn_close .stButton>button:hover {
+    border-radius: 12px !important;
+    border: 1px solid #ffffff !important;  /* blue */
+}
+
+.st-key-btn_tools .stButton>button:hover {
+    border-radius: 12px !important;
+    border: 1px solid #ffffff !important;  /* blue */
+}
+
+/* ---------- Submenu Hover & Base Styles ---------- */
+
+/* Home Sub-Options */
+.st-key-btn_home_opt1 .stButton>button {
+    border: 2px solid #28a745 !important;
+}
+.st-key-btn_home_opt1 .stButton>button:hover {
+    background-color: #28a74550 !important;  /* same very light green */
+    color: white !important;
+}
+
+.st-key-btn_home_opt2 .stButton>button {
+    border: 2px solid #28a745 !important;
+}
+.st-key-btn_home_opt2 .stButton>button:hover {
+    background-color: #28a74550 !important;
+    color: white !important;
+}
+
+/* Analytics Sub-Options (use a light orange on hover) */
+.st-key-btn_analytics_opt1 .stButton>button {
+    border: 2px solid #fd7e14 !important;
+}
+.st-key-btn_analytics_opt1 .stButton>button:hover {
+    background-color: #fd7e1450 !important;  /* very light orange */
+    color: white !important;
+}
+
+.st-key-btn_analytics_opt2 .stButton>button {
+    border: 2px solid #fd7e14 !important;
+}
+.st-key-btn_analytics_opt2 .stButton>button:hover {
+    background-color: #fd7e1450 !important;
+    color: white !important;
+}
+
+.st-key-btn_icon_browser .stButton>button {
+    border: 2px solid #fd7e14 !important;
+}
+.st-key-btn_icon_browser .stButton>button:hover {
+    background-color: #fd7e1450 !important;
+    color: white !important;
+}
+
+
+
+/* Live Footage Sub-Options (use a light purple on hover) */
+.st-key-btn_live_list .stButton>button {
+    border: 2px solid #9c27b0 !important;
+}
+.st-key-btn_live_list .stButton>button:hover {
+    background-color: #8a2be250 !important;  /* very light purple */
+    color: white !important;
+}
+
+.st-key-btn_live_charts .stButton>button {
+    border: 2px solid #9c27b0 !important;
+}
+.st-key-btn_live_charts .stButton>button:hover {
+    background-color: #8a2be250 !important;
+    color: white !important;
+}
+
+/* System Uptime Sub-Options (use a light blue on hover) */
+.st-key-btn_uptime_form .stButton>button {
+    border: 2px solid #2196f3 !important;
+}
+.st-key-btn_uptime_form .stButton>button:hover {
+    background-color: #007bff50 !important;  /* very light blue */
+    color: white !important;
+}
+
+.st-key-btn_uptime_review .stButton>button {
+    border: 2px solid #2196f3 !important;
+}
+.st-key-btn_uptime_review .stButton>button:hover {
+    background-color: #007bff50 !important;
+    color: white !important;
+}
+
+
+/* ───────── WARNINGS & ALERTS (seg_0) ───────── */
+/* Primary */
+#main_app .st-key-seg_0 .stButton>button[kind="primary"] {
+border: 2px solid darkred !important;
+background-color: #dd0000 !important;
+color: white !important;
+}
+/* Secondary */
+.st-key-seg_0 .stButton>button[kind="secondary"] {
+border: 2px solid #dd0000 !important;
+background-color: transparent !important;
+color: #dd0000 !important;
+}
+.st-key-seg_0 .stButton>button:hover {
+background-color: rgba(221, 0, 0, 0.2) !important;
+color: white
+}
+            
+/* ───────── USER INTERFACE (seg_1) ───────── */
+.st-key-seg_1 .stButton>button[kind="secondary"] {
+background-color: transparent !important;
+color: orange !important;
+border: 2px solid orange !important;
+}
+.st-key-seg_1 .stButton>button[kind="primary"] {
+background-color: orange !important;
+color: white !important;
+border: 2px solid orange !important;
+}
+.st-key-seg_1 .stButton>button:hover {
+background-color: rgba(255, 165, 0, 0.2) !important;
+}
+
+/* ───────── THEMES (seg_2) ───────── */
+
+.st-key-seg_2 .stButton>button[kind="secondary"] {
+    background-color: transparent !important;
+    color: #079dee !important;
+    border: 2px solid #079dee !important;
+    }
+    .st-key-seg_2 .stButton>button[kind="primary"] {
+    background-color: #079dee  !important;
+    color: white !important;
+    border: 2px solid #079dee  !important;
+    }
+    .st-key-seg_2 .stButton>button:hover {
+    background-color: rgba(7, 157, 238, 0.2) !important;
+}
+
+
+/* ───────── EXTRA (seg_3) ───────── */
+.st-key-seg_3 .stButton>button[kind="secondary"] {
+background-color: transparent !important;
+color: white !important;
+border: 2px solid grey !important;
+}
+.st-key-seg_3 .stButton>button[kind="primary"] {
+background-color: lightgrey !important;
+color: black !important;
+border: 2px solid grey !important;
+}
+            
+.st-key-seg_3 .stButton>button:hover {
+background-color: #f0f0f0 !important;
+color: black !important;
+}
+
+        
+.st-key-edit_theme .stButton>button[kind="secondary"] {
+background-color: transparent !important;
+border: 1px solid white !important;
+}
+.st-key-edit_theme .stButton>button[kind="primary"] {
+border: 1px solid white !important;
+}
+
+.info-label { 
+    font-size: 1.5rem; 
+    font-weight:600; 
+    color:white; 
+}
+.info-value { 
+    font-size: 1.4rem; 
+    color:#35cbed; 
+    margin-left:0.5rem; 
+}
+
+h6 {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0.65 !important;
+    display: inline-block !important;
+    font-size: 60px !important;
+    color: white !important;
+}
