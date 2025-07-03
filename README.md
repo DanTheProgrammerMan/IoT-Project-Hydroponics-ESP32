@@ -112,35 +112,23 @@ Insert wiring diagram image here
 
 ## Dirtectory File Structure
 Organise your project as follows. Adjust paths in your code if your Flask server is located outside the shown structure.
-### your-project/
-### flask_server/
-- app.py 
-- data.csv
-### streamlit_app/
-- app.py
-- data/
-  - data.csv  ← Symlink or copy of `../flask_server/data.csv`
-### README.md
-- Project documentation
 
 ```plaintext
 your-project/
-├── flask_server/            # Flask server code & data storage
-│   ├── app.py               # Flask application
-│   ├── requirements.txt     # flask, pandas
-│   └── data.csv             # Stored sensor readings
+├── flask_server/            ← Flask server code & data storage  
+│   ├── app.py               ← Flask application    
+│   └── data.csv             ← Stored sensor readings  
 │
-├── streamlit_app/           # Streamlit dashboard
-│   ├── app.py               # Streamlit application
-│   ├── requirements.txt     # streamlit, pandas
+├── streamlit_app/           ← Streamlit dashboard  
+│   ├── app.py               ← Streamlit application   
 │   └── data/                
-│       └── data.csv         # Symlink or copy of ../flask_server/data.csv
+│       └── data.csv         ← Symlink or copy of `../flask_server/data.csv`  
 │
-├── README.md                # Project documentation
-└── .gitignore
+├── README.md                ← Project documentation  
+└── .gitignore    
 ```
 
-- (Recommended name: `flask_server.py`)
+---
 
 ## 📊 Live Dashboard
 The Streamlit web application provides real-time visualisations of the temperature & humidity data collected by the ESP32.
