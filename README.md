@@ -47,8 +47,7 @@ Insert wiring diagram image here
   - Flask
   - Streamlit
   - Pandas
-
-_py -m pip install flask_
+- Install: _py -m pip install flask_
 
 ### Setup Guide
 ### 1. ESP32 Setup:
